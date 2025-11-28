@@ -22,7 +22,7 @@ export const Navigation = () => {
   return (
     <nav className={`nav ${open ? 'nav--open' : ''}`} aria-label="Primary">
       <div className="nav__inner">
-        <a className="nav__brand" href="#home" onClick={close}>
+        <a className="nav__brand" href="#" onClick={close}>
           <img src={Logo} alt="Mezha Svicha logo" style={{ height: 24 }} />
         </a>
 

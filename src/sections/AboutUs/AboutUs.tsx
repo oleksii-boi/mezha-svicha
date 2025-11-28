@@ -31,7 +31,7 @@ export const AboutUs = () => {
         </p>
       </section>
 
-      <img src={PotatoBucket} className={styles.potatoImage} />
+      <img src={PotatoBucket} className={styles.potatoImage} alt="Potato bucket" />
 
       <section className={styles.bulletPoints}>
         {data.map((item, index) => (
