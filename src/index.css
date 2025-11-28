@@ -64,6 +64,7 @@ button:focus-visible {
 #about-us,
 #products,
 #technologies,
+#clients,
 #contacts {
   scroll-margin-top: 120px; /* Adjust to your header height */
 }
@@ -71,6 +72,7 @@ button:focus-visible {
 @media (min-width: 768px) {
   #about-us,
   #products,
+  #clients,
   #technologies,
   #contacts {
     scroll-margin-top: 160px; /* Adjust to your header height */

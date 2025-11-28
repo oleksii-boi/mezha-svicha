@@ -2,7 +2,7 @@ import styles from './ServiceTo.module.scss';
 
 export const ServiceTo = () => {
   return (
-    <section className={styles.sectionContainer}>
+    <section className={styles.sectionContainer} id="clients">
       <section className={styles.innerContainer}>
         <h1>ЯК ТА З КИМ МИ ПРАЦЮЄМО</h1>
 

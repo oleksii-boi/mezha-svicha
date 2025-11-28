@@ -14,8 +14,8 @@ export const Navigation = () => {
   const items = [
     { href: '#about-us', label: 'Про нас' },
     { href: '#products', label: 'Продукція' },
-    // { href: '#features', label: 'Послуги' },
     { href: '#technologies', label: 'Технологія' },
+    { href: '#clients', label: 'Клієнти' },
     { href: '#contacts', label: 'Контакти' },
   ];
 
