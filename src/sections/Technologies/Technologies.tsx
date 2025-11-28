@@ -41,7 +41,7 @@ export const Technologies = () => {
         <section className={styles.techCards}>
           {data.map((item, index) => (
             <section key={index} className={styles.techCard}>
-              <img src={item.img} alt={item.title} />
+              <img src={item.img} alt={`${item.title} - технологія вирощування овочів`} />
               <p>
                 <strong>{item.title}</strong>
                 {item.desc}

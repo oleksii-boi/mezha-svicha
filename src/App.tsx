@@ -9,7 +9,7 @@ import { Contacts } from './sections/Contacts/Contacts.tsx';
 
 function App() {
   return (
-    <>
+    <main>
       <Navigation />
       <LandingSections />
       <AboutUs />
@@ -17,7 +17,7 @@ function App() {
       <Technologies />
       <ServiceTo />
       <Contacts />
-    </>
+    </main>
   );
 }
 

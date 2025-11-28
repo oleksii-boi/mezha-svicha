@@ -160,26 +160,27 @@
     .row1 {
       .box1 {
         background: #4e8c6a;
-        width: 1500px;
+        width: 1580px;
       }
       .box2 {
         background: #e4ddd3;
         color: #123234;
         display: flex;
-        max-width: 450px;
-        min-width: 250px;
+        width: 270px;
       }
       .box3 {
         background: #4e8c6a;
-        width: 220px;
+        color: white;
+        width: 150px;
       }
       .box4 {
         background: #4e8c6a;
-        width: 255px;
+        color: white;
+        width: 220px;
       }
       .box5 {
         background: #9bc19d;
-        width: 1500px;
+        width: 1450px;
       }
     }
     .row2 {
@@ -189,21 +190,61 @@
       }
       .box2 {
         background: #4e8c6a;
-        width: 250px;
+        width: 200px;
+        color: white;
       }
       .box3 {
         background: #9bc19d;
         color: #123234;
-        width: 400px;
+        width: 240px;
       }
       .box4 {
         background: #e4ddd3;
         color: #123234;
-        width: 360px;
+        width: 300px;
       }
       .box5 {
         width: 1500px;
         background: #4e8c6a;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop {
+    .row1 {
+      .box1 {
+        width: 1500px;
+      }
+      .box2 {
+        width: 450px;
+      }
+      .box3 {
+        width: 220px;
+      }
+      .box4 {
+        width: 280px;
+      }
+      .box5 {
+        width: 1500px;
+      }
+    }
+    .row2 {
+      .box1 {
+        width: 1550px;
+      }
+      .box2 {
+        width: 250px;
+      }
+      .box3 {
+        width: 400px;
+      }
+      .box4 {
+        width: 360px;
+      }
+      .box5 {
+        width: 1500px;
       }
     }
   }
