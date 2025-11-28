@@ -1,0 +1,99 @@
+.sectionContainer {
+  margin: 60px 30px 80px 30px;
+
+  h1 {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--green-salad);
+    margin: 0;
+    text-align: start;
+    margin-bottom: 32px;
+  }
+
+  .imgSection {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    div {
+      height: 250px;
+      background-repeat: no-repeat, no-repeat;
+      background-position: center, center;
+      background-size: cover, cover;
+      border-radius: 30px;
+      background-color: rgba(0, 0, 0, 0.3);
+      background-blend-mode: darken;
+
+      &:nth-child(1) {
+        background-image: url('../../assets/potato.jpg');
+      }
+
+      &:nth-child(2) {
+        background-image: url('../../assets/carrots.jpg');
+      }
+
+      &:nth-child(3) {
+        background-image: url('../../assets/squash.jpg');
+      }
+
+      h4 {
+        font-family: var(--font-secondary);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 158%;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionContainer {
+    max-width: var(--container-max);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    max-width: var(--container-max);
+    justify-self: center;
+
+    h1 {
+      margin-bottom: 70px;
+      align-self: start;
+      height: unset;
+    }
+
+    .imgSection {
+      flex-direction: row;
+      padding-bottom: 120px;
+
+      div {
+        flex: 1;
+        height: 280px;
+        gap: 24px;
+        background-color: rgba(0, 0, 0, 0);
+
+        h4 {
+          display: flex;
+          text-align: start;
+          align-items: start;
+          justify-content: start;
+          margin: 0;
+          margin-top: 310px;
+          font-size: 22px;
+          padding-right: 60px;
+        }
+      }
+    }
+  }
+}

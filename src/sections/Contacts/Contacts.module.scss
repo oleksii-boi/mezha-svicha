@@ -1,0 +1,140 @@
+.sectionContainer {
+  background: var(--green-salad);
+  border-radius: 30px 30px 0 0;
+
+  .innerContainer {
+    padding: 60px 30px 300px 30px;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+      font-family: var(--font-secondary);
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: var(--green-darker);
+      margin: 0;
+      text-align: start;
+    }
+
+    .legal {
+      color: var(--green-darker);
+      font-family: var(--font-base);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 158%;
+      text-align: start;
+      margin: 30px 0;
+    }
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  img {
+    height: 30px;
+    width: 20px;
+  }
+
+  a {
+    font-family: var(--font-base);
+    color: var(--green-darker);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 158%;
+    text-align: start;
+    margin-left: 15px;
+  }
+}
+
+@mixin image {
+  position: absolute;
+  width: 230px;
+}
+
+.watermelon {
+  @include image;
+  left: 27%;
+  bottom: -10px;
+}
+
+.carrot {
+  @include image;
+  right: -41px;
+  bottom: -32px;
+}
+
+.potato {
+  @include image;
+  right: -46px;
+  bottom: 117px;
+  transform: rotate(41deg);
+}
+
+.squash {
+  @include image;
+  left: -43px;
+  bottom: -29px;
+  transform: rotate(18deg);
+}
+.beet {
+  @include image;
+  left: 27%;
+  bottom: 105px;
+  transform: rotate(-21deg);
+}
+
+@media (min-width: 768px) {
+  .sectionContainer {
+    display: flex;
+    justify-content: center;
+    overflow-x: clip;
+    overflow-y: visible;
+    clip-path: polygon(-100% -500%, 200% -500%, 200% 100%, -100% 100%);
+
+    .innerContainer {
+      width: var(--container-max);
+      overflow: visible;
+      padding-bottom: 60px;
+    }
+  }
+
+  .watermelon {
+    right: 53px;
+    top: -20px;
+    transform: rotate(0deg);
+    left: unset;
+  }
+
+  .carrot {
+    left: unset;
+    right: 13px;
+    top: 127px;
+    transform: rotate(0deg);
+  }
+
+  .potato {
+    right: 200px;
+    top: 41px;
+    transform: rotate(56deg);
+    z-index: 1;
+  }
+
+  .squash {
+    left: unset;
+    right: -148px;
+    bottom: 0px;
+    transform: rotate(7deg);
+  }
+
+  .beet {
+    left: -196px;
+    top: -58px;
+    transform: rotate(-28deg);
+    z-index: 100;
+  }
+}

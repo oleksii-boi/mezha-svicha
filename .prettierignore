@@ -1,0 +1,15 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Vite cache
+.vite
+
+# Optional: ignore lockfile if you don't want Prettier to scan it
+package-lock.json
+
+# Generated assets
+public/*.svg
+

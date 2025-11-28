@@ -1,0 +1,88 @@
+.sectionContainer {
+  background: #4e8c6a;
+  padding: 60px 30px;
+  border-radius: 30px;
+
+  h1 {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: start;
+    margin-bottom: 32px;
+  }
+
+  .techDesc {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 158%;
+    text-transform: uppercase;
+    text-align: start;
+  }
+}
+
+.techCards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+
+  .techCard {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex: 1;
+
+    img {
+      width: 120px;
+      height: 130px;
+      flex-shrink: 0;
+    }
+    p {
+      font-family: var(--font-base);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 158%;
+      text-align: start;
+      margin: 0;
+
+      strong {
+        color: var(--green-darker);
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionContainer {
+    display: flex;
+    justify-content: center;
+
+    .innerContainer {
+      max-width: var(--container-max);
+
+      h1 {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .techCards {
+    flex-direction: row;
+    gap: 32px;
+    .techCard {
+      flex-direction: column;
+      align-items: start;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
