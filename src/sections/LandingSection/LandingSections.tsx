@@ -12,7 +12,8 @@ export const LandingSections = () => {
       />
 
       <a href={PdfFile} target="_blank" rel="noopener noreferrer" className={styles.button}>
-        ЗАВАНТАЖИТИ ПРОПОЗИЦІЮ
+        ЗАВАНТАЖИТИ <br />
+        ПРОПОЗИЦІЮ
       </a>
     </section>
   );
