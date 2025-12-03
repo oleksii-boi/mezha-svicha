@@ -27,7 +27,7 @@
   margin-bottom: 120px;
   width: 80%;
   max-width: 360px;
-  padding: 8px 25px;
+  padding: 16px 25px;
   color: white;
   font-family: var(--font-secondary);
   font-weight: 600;
@@ -41,10 +41,19 @@
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(4px);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  display: inline-block;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     cursor: pointer;
     border: 2px solid white;
+    color: white;
+  }
+
+  &:active {
+    transform: scale(0.98);
   }
 }
 
